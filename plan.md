@@ -29,6 +29,11 @@ When requirements change, update this `plan.md` before implementation. This keep
 
 ## Current Requirement Update
 
+- Add a compact manual evaluation rubric for sample 03:
+  - Treat `tests/03-answer.md` as the ground-truth reference answer for the overseas digital-content income scenario.
+  - Complete `tests/03-eval.md` as a yes/no rubric that can score whether another chatbot answer covers the same practical legal/tax issues.
+  - Keep it as manual demo evaluation, not automated test code or a test framework.
+  - Mention the manual evaluation workflow at the top of `README.md`.
 - Prepare a clean, logical git history and push it:
   - Add `CONTRIBUTING.md` with commit hygiene, history rewrite, and secret-safety rules.
   - Update `AGENTS.md` so future commit work follows `CONTRIBUTING.md`.

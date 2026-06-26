@@ -1,5 +1,7 @@
 # Korean Law RAG Chatbot
 
+Manual evaluation note: `tests/03-answer.md` is the reference answer for sample query 03, and `tests/03-eval.md` is a yes/no rubric for quickly judging another chatbot answer against that reference. This is a manual demo check, not automated test code.
+
 Streamlit demo chatbot for Korean legal data. It uses OpenRouter Gemini 3.5 Flash, OpenAI SDK tool calling, and a local Korean Law MCP server.
 
 ## What It Does
