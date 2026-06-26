@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+.mypy_cache/
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local secrets
+.env
+.streamlit/secrets.toml
+
+# Local diagnostic logs
+logs/
+*.log

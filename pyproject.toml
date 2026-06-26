@@ -1,0 +1,16 @@
+[project]
+name = "onelineai-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "jinja2>=3.1.6",
+    "loguru>=0.7.3",
+    "mcp>=1.28.0",
+    "openai>=2.44.0",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.2",
+    "streamlit>=1.58.0",
+    "watchdog>=6.0.0",
+]

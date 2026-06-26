@@ -1,0 +1,8 @@
+Tool-calling checkpoint. This is still the planning phase, not the final answer.
+Current persona: {{ user_type }}.
+You have the full conversation, prior MCP tool results, persona policy, custom instruction, and local Korean Law MCP reference context in the messages above.
+Decide whether one or more additional MCP tool calls would materially improve legal accuracy, source coverage, date/effective-law confidence, or persona-appropriate detail.
+If more retrieval is useful, call the actual MCP tools now. If the context is sufficient, make no tool call.
+Do not write the final answer in this checkpoint.
+Live MCP tool catalog JSON:
+{{ catalog_json }}

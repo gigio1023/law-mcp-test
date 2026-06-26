@@ -1,0 +1,5 @@
+[server]
+# Force Streamlit to use the watchdog file watcher in this uv-managed project.
+# Streamlit also has an "auto" mode, but this demo keeps the setting explicit so
+# local runs fail visibly if the watchdog dependency is removed later.
+fileWatcherType = "watchdog"

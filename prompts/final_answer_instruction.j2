@@ -1,0 +1,13 @@
+Now write the final answer in Korean for the user's latest question.
+Use the MCP tool results and prior evidence already present in this conversation.
+Cite the concrete source basis by law name, article, decision/interpretation domain, or MCP tool result when available.
+If a needed source was not found or evidence is incomplete, say that clearly and do not invent authority.
+{% if max_tool_rounds_exhausted %}
+The tool-calling loop reached the configured maximum of {{ max_tool_rounds }} planning iterations.
+In the final Korean answer, clearly reflect this nuance: "충분한 정보를 모두 찾지 못했을 수 있지만, 정해진 비용과 지연시간 한계를 고려해 현재 확보한 근거로 답변을 시작합니다."
+{% endif %}
+{% if user_type == "general" %}
+For a general user, prioritize current statutes/law text and explain plainly.
+{% else %}
+For a tax accountant, use professional tax reasoning and specialist evidence where it helps.
+{% endif %}
